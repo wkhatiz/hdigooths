@@ -1,15 +1,17 @@
 import { StyleSheet, View, Text, Pressable, Image, Alert } from "react-native";
-import { useState, useEffect } from "react";
-import {getDescFromNodesArr} from "../utils/connections";
+import { useState } from "react";
+import { getDescFromNodes } from "../utils/connections";
 
 export default function Directions({ route, navigation }) {
 
     let [counter, setCounter] = useState(0);
     let { nodesArr } = route.params;
     let directions = [];
+
     for(let x = 0; x < nodesArr.length-1; x++){
-        directions.push(getDescFromNodesArr(nodesArr[x], nodesArr[x+1]));
+        directions.push(getDescFromNodes(nodesArr[x], nodesArr[x+1]));
     }
+
     directions.push("The exit should now be just ahead");
 
     let nextPressHandler = () => {
@@ -30,7 +32,7 @@ export default function Directions({ route, navigation }) {
 
     return (
         <View style = {directionspagestyles.container}>
-            <Image style = {directionspagestyles.image} source={require("../assets/sample_image.jpg")}></Image>
+            <Image style = {directionspagestyles.image} source={require('../assets/sample_image.jpg')}></Image>
             <View style={directionspagestyles.directions_container}>
                 <Text style={directionspagestyles.directions_text}>{directions[counter]}</Text>
                 <View style={directionspagestyles.nav_container}>
@@ -60,7 +62,8 @@ const directionspagestyles = StyleSheet.create({
         borderColor: "orange",
         width: "90%",
         padding: 10,
-        marginBottom: 10
+        marginBottom: 10,
+        backgroundColor: "white"
     },
     directions_text: {
         fontSize: 18,
