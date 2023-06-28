@@ -9,7 +9,7 @@ export default function Directions({ route, navigation }) {
     let directions = [];
 
     for(let x = 0; x < nodesArr.length-1; x++){
-        directions.push(getDescFromNodes(nodesArr[x], nodesArr[x+1]));
+        directions.push(nodesArr[x] + " to " + nodesArr[x+1] + " : " + getDescFromNodes(nodesArr[x], nodesArr[x+1]));
     }
 
     directions.push("The exit should now be just ahead");

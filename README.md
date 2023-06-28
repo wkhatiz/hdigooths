@@ -37,4 +37,9 @@ If you're using the Expo Go app, scan the QR code that appears in the terminal a
 
 Wait for Metro Bundler to finish starting up then you can use Shift + A to display active devices you can build to. Select your AVD and the application should be shown in your AVD.
 
+## Current Status
+
+The application itself is most completed. 
+
+The main task to be completed is data entry. Providing an image and description text for every path between 2 nodes. This would be done in /utils/connections.js
 
