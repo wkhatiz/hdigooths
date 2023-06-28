@@ -14,11 +14,11 @@ The above map was then converted into the below weighted graph and represented i
 
 Node.js can be installed [here](https://nodejs.org/en/download)
 
-- Android Virtual Device
+- Android Virtual Device (AVD)
 
-You need a device to run the application on. This can be a physical android device with USB Debugging enabled in the Settings or an Android virtual device running on your workstation. The easiest way to get an AVD installed is using the Virtual Device Manager bundled with Android Studio. Android Studio can be downloaded [here](https://developer.android.com/studio)
+You need a device to run the application on. This can be a physical android device with 'USB Debugging' enabled in the settings or an AVD running on your workstation. The easiest way to get an AVD installed is using the Virtual Device Manager bundled with Android Studio. Android Studio can be downloaded [here](https://developer.android.com/studio)
 
-Simply open Android Studio, look for Virtual Device Manager in the menu bar and follow the prompt to get an AVD up and running. 
+Simply open Android Studio, look for Virtual Device Manager in the menu bar and follow the prompts to get an AVD up and running. 
 
 *You can also install the Expo Go mobile app which enables you to remotely run the project on your personal device*
 
