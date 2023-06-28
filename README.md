@@ -16,9 +16,11 @@ Node.js can be installed [here](https://nodejs.org/en/download)
 
 - Android Virtual Device
 
-You need a device for to run the application on. This can be a physical Android device with USB debugging enabled or an Android virtual device running on your workstation. The easiest way to get an AVD installed is using the Virtual Device Manager bundled with Android Studio. Android Studio can be downloaded [here](https://developer.android.com/studio)
+You need a device to run the application on. This can be a physical android device with USB Debugging enabled in the Settings or an Android virtual device running on your workstation. The easiest way to get an AVD installed is using the Virtual Device Manager bundled with Android Studio. Android Studio can be downloaded [here](https://developer.android.com/studio)
 
 Simply open Android Studio, look for Virtual Device Manager in the menu bar and follow the prompt to get an AVD up and running. 
+
+*You can also install the Expo Go mobile app which enables you to remotely run the project on your personal device*
 
 ### Starting the Dev Server
 
@@ -31,4 +33,8 @@ then start Metro Bundler by running the command:
 npx expo start
 ```
 
+If you're using the Expo Go app, scan the QR code that appears in the terminal as Metro Bundler starts up. 
+
 Wait for Metro Bundler to finish starting up then you can use Shift + A to display active devices you can build to. Select your AVD and the application should be shown in your AVD.
+
+
