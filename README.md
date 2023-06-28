@@ -1,9 +1,9 @@
 # HDIGOOTHS
-A React Native application aiming to take the below map of Town Hall Station and recreate it as a weighted graph. From  there, dijktsras algorithm can be used to find the shortest path from any node in the graph. This React Native appliation displays all the exit nodes in the graph and allows you to pick one to begin recieving directions on how to get to the chose exit from the users starting point. 
+A React Native application aiming to take the below map of Town Hall Station and recreate it as a weighted graph. From  there, dijkstra's algorithm can be used to find the shortest path from any node in the graph. This React Native application displays all the exit nodes in the graph and allows the user to pick one to begin recieving directions on how to get to the chosen exit from the users starting point. 
 
 ![alt text](https://github.com/wkhatiz/hdigooths/blob/main/assets/Town%20Hall%20Station%20Map.png?raw=true)
 
-The above map was then converted in to the below weighted graph and represented in the project as a JavaScript object. 
+The above map was then converted into the below weighted graph and represented in the project as a JavaScript object. 
 
 ![alt text](https://github.com/wkhatiz/hdigooths/blob/main/assets/Weighted%20Graph.png?raw=true)
 
@@ -39,7 +39,7 @@ Wait for Metro Bundler to finish starting up then you can use Shift + A to displ
 
 ## Current Status
 
-The application itself is most completed. 
+The application itself is mostly completed and functional.
 
 The main task to be completed is data entry. Providing an image and description text for every path between 2 nodes. This would be done in /utils/connections.js
 
