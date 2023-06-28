@@ -43,3 +43,13 @@ The application itself is mostly completed and functional.
 
 The main task to be completed is data entry. Providing an image and description text for every path between 2 nodes. This would be done in /utils/connections.js
 
+## Future Improvements
+
+- The application is entirely client-side. It would be best to implement a Postgres database with a Nodes table and a Paths table so that as more exits or paths are added to the application the data doesn't become unweildy. An Express.js API would provide the client with the relevant paths upon request. 
+- The form on the splash page should contain a Picker rather than a textbox. The textbox was added for development as the native React Native Picker component was deprecated. 
+- A Sort/Filter button would be nice on the List page. Currently, the list items are sorted from closest exit to furthest exit but having a button to change between certain criteria such as ruling out staircases, would provide better usability to impaired users. 
+- Not using Location Data was a design choice as Town Hall Station is mostly underground which would pose issues in accuracy and not using Location Data means users don't have to provide sensitive information simply to interact with my novelty app. 
+ 
+
+
+
