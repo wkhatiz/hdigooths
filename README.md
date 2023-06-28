@@ -11,9 +11,11 @@ The above map was then converted in to the below weighted graph and represented 
 
 ### Pre-requisites
 - Node.js
+
 Node.js can be installed [here](https://nodejs.org/en/download)
 
 - Android Virtual Device
+
 You need a device for to run the application on. This can be a physical Android device with USB debugging enabled or an Android virtual device running on your workstation. The easiest way to get an AVD installed is using the Virtual Device Manager bundled with Android Studio. Android Studio can be downloaded [here](https://developer.android.com/studio)
 
 Simply open Android Studio, look for Virtual Device Manager in the menu bar and follow the prompt to get an AVD up and running. 
