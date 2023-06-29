@@ -10,9 +10,9 @@ export default function Home({ navigation }) {
     console.log("User inputted: " + inputValue);
     if(!startingNodes.includes(inputValue)){
       console.log("Input rejected: " + inputValue);
-      Alert.alert("Invalid input", "Please input the id of a starting node. " + 
-                  "Refer to /utils/starting-nodes.js in the project file structure" +
-                  " for details");
+      Alert.alert("Invalid input", "Please input the id of a starting node. \n" + 
+                  "For example 'SA'. \n\n" + 
+                  "I know this isn't optimal but this is just a proof of concept.");
     } else {
       navigation.navigate('List', {startNode: inputValue});
     }
